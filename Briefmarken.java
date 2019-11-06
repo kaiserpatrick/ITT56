@@ -8,6 +8,8 @@ public class Briefmarken {
         System.out.print("Bitte den Cent Betrag eingeben: ");
         centBetrag = scan.nextInt();
 
+        scan.close();
+
         if(centBetrag % 10 == 0){
             System.out.println("\t50 Cent\t20 Cent\t10 Cent");
 
