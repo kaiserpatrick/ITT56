@@ -33,10 +33,10 @@ class Patient{
     }
 
     public void setPatientNr() {
-        this.patientNr = (((((int)Math.random()) * 100) + 1) * 42);
+        this.patientNr = (int)(((Math.random() * 100) + 1) * 42);
     }
 
     public String toString() {
-        return name + ", " + this.vorname + ", " + this.alter + ", " + this.patientNr;
+        return this.name + ", " + this.vorname + ", " + this.alter + ", " + this.patientNr;
     }
 }

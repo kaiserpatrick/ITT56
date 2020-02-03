@@ -4,7 +4,9 @@ class PatientTest {
         public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         String name, vorname;
-        int alter, eingabe, i, j;
+        int alter, eingabe, i, gAlter = 0;
+        double avgAlter = 0.0;
+        
         /* 
         System.out.print("Bitte geben Sie den Vornamen ein: ");
         vorname = scan.nextLine();
@@ -39,10 +41,20 @@ class PatientTest {
         }
 
         scan.close();
-        j = 0;
-        while(j < eingabe){
-            System.out.println(patient[j]);
-            j++;
+
+        i = 0;
+
+        System.out.println("===========================");
+        System.out.println("Ausgabe der Patienten Daten");
+
+        while(i < eingabe){
+            System.out.println(patient[i]);
+            gAlter = gAlter + patient[i].getAlter();
+            i++;
         }
+
+        avgAlter = (double) gAlter / (double) eingabe;
+        System.out.println("Durchschnittsalter: " + avgAlter);
+        
     }
 }
