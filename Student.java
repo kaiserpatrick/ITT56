@@ -46,7 +46,7 @@ class Student {
         return name + " (" + nummer + ") ";
     }
 
-    // defaukt-Konstruktor automatisch vorhanden, solange kein anderer
+    // default-Konstruktor automatisch vorhanden, solange kein anderer
     // Konstruktor geschrieben wurde
     // prinzipiell: Student(){  }
 

@@ -47,6 +47,6 @@ class StudentTest {
          * }
          */
 
-        System.out.println("Studentenzahl: " + Student.getZaehler());
+        // System.out.println("Studentenzahl: " + student.getZaehler());
     }
 }
