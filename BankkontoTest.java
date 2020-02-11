@@ -8,6 +8,7 @@ class BankkontoTest {
         konto1.abheben(3000.55);
         System.out.println(konto1.toString());
         System.out.println("Kontrolle: " + konto1.getBesitzer() + " " + konto1.getKontostand());
+        
         konto1.einzahlen(4020.20);
         System.out.println(konto1.toString());
         System.out.println("Kontrolle: " + konto1.getBesitzer() + " " + konto1.getKontostand());
