@@ -47,6 +47,7 @@ class Bankkonto {
 
     public String toString() {
         String verschluesselterName = " ";
+        
         for(int i = 0; i < this.besitzer.length(); i++) {
             verschluesselterName = verschluesselterName + this.besitzer.charAt(i) + this.besitzer.charAt(i);
         }
