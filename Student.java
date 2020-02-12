@@ -7,6 +7,8 @@ class Student {
     //                  eines Objektes
     private static int zaehler;
 
+    Student() {}
+
     public Student(String vorname,  int nummer) {
         setName(this.name);
         setNummer(this.nummer);
