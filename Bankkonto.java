@@ -1,15 +1,12 @@
 class Bankkonto {
-    private String besitzer;
     private double kontostand;
+    private String besitzer;
     private boolean ueberzogen;
 
-    Bankkonto() {
-        this.ueberzogen = false;
-    }
+    Bankkonto() {}
 
     Bankkonto(String besitzer) {
         this.besitzer = besitzer;
-        this.ueberzogen = false;
     }
 
     public void setBesitzer(String besitzer) {
@@ -17,11 +14,11 @@ class Bankkonto {
     }
 
     public String getBesitzer() {
-        return this.besitzer;
+        return besitzer;
     }
 
     public double getKontostand() {
-        return this.kontostand;
+        return kontostand;
     }
 
     public boolean istUeberzogen() {
@@ -50,11 +47,12 @@ class Bankkonto {
 
     public String toString() {
         String verschluesselterName = " ";
+        
         for(int i = 0; i < this.besitzer.length(); i++) {
             verschluesselterName = verschluesselterName + this.besitzer.charAt(i) + this.besitzer.charAt(i);
         }
 
-        if(!ueberzogen){
+        if(!this.ueberzogen){
             return "Kontoinhaber: " + verschluesselterName + " Kontostand: " + this.kontostand + " nicht ueberzogen!!!";
         } else {
             return "Kontoinhaber: " + verschluesselterName + " Kontostand: " + this.kontostand + " ueberzogen!!!";

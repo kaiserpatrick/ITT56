@@ -7,6 +7,8 @@ class Student {
     //                  eines Objektes
     private static int zaehler;
 
+    Student() {}
+
     public Student(String vorname,  int nummer) {
         setName(this.name);
         setNummer(this.nummer);
@@ -46,7 +48,7 @@ class Student {
         return name + " (" + nummer + ") ";
     }
 
-    // defaukt-Konstruktor automatisch vorhanden, solange kein anderer
+    // default-Konstruktor automatisch vorhanden, solange kein anderer
     // Konstruktor geschrieben wurde
     // prinzipiell: Student(){  }
 
