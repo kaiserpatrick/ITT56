@@ -17,3 +17,7 @@ public class Dateiname {
 ```java
 import java.util.Scanner;
 ```
+
+## Lektüren
+- GRUNDKURS PROGRAMMIEREN IN JAVA (8. Auflage)
+- gailer-net.de
