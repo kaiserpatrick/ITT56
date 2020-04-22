@@ -45,6 +45,11 @@ class Spielfilm extends Videoband {
   }
 }
 
+/* class Musikvideo extends Videoband {
+ *
+ * }
+ */
+
 class VideoVerleih {
   public static void main ( String args[] ) {
     Videoband   artikelA = new Videoband("Microcosmos", 90 );
